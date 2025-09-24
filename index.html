@@ -3,20 +3,23 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ToDoList</title>
+  <title>Todo List</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-
-  <div class="Logo">
-    <a href="#">ToDoList</a><br>
-
-    <input type="text"><br>
-    <button class="send">Add</button>
+  <div class="todo-container">
+    <h1>Todo List</h1>
+    <div class="input-section">
+      <input type="text" id="taskInput" placeholder="Enter word...">
+      <button id="addBtn">Add</button>
+    </div>
+    <ul id="taskList"></ul>
+    <button class="sort-btn" id="sortBtn">Sort Alphabetically</button>
+    <button class="sort-date-btn" id="sortDateBtn">Sort by Date</button>
+    <button class="delete-selected-btn" id="deleteSelectedBtn">Delete Selected</button>
+    <button class="delete-all-btn" id="deleteAllBtn">Delete All</button>
   </div>
-
 
   <script src="./script.js"></script>
 </body>
